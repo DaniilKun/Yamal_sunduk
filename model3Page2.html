@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css_model/model3Page2.css" />
+    <link rel="stylesheet" href="/fonts.css" />
+    <link rel="stylesheet" href="css_model/all_model.css" />
+    <title>THREE JS - Lesson</title>
+  </head>
+
+  <body>
+    <div class="conteiner_main">
+      <h1>«ПАД» - СУМКА ДЛЯ ХРАНЕНИЯ ПРОДУКТОВ</h1>
+      <div class="container_descript">
+        <h2>
+          «ПАД»<br />
+          СУМКА ДЛЯ ХРАНЕНИЯ ПРОДУКТОВ<br />
+          ИЗ КОЖИ ОСЕТРА
+        </h2>
+        <h3>
+          Сумка трапециевидной формы. Сумка сшита из кожи осетра. Вставка
+          верхней части изготовлена из оленьей замши.
+        </h3>
+        <h3>ПЕРИОД СОЗДАНИЯ: начало ХХ века</h3>
+        <h3>МАТЕРИАЛ, ТЕХНИКА: кожа осетра, оленья замша, шитье вручную</h3>
+        <h3>РАЗМЕР: 49x44 см</h3>
+      </div>
+    </div>
+    <div class="container"></div>
+
+    <!-- <a href="">
+        <button class="lypa"></button>
+    </a> -->
+    <img class="osetrImg" src="img/imgBag/Osetr.png" alt="" />
+    <a href="./model3.html">
+      <div>
+        <img src="/img/btn.png" alt="" class="btn" />
+        <h2 id="btn">НАЗАД К ОПИСАНИЮ</h2>
+      </div>
+    </a>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.139.0/build/three.module.js",
+          "OrbitControls": "https://unpkg.com/three@0.139.0/examples/jsm/controls/OrbitControls.js",
+          "GLTFLoader": "https://unpkg.com/three@0.139.0/examples/jsm/loaders/GLTFLoader.js",
+          "RectAreaLightHelper": "https://unpkg.com/three@0.139.0/examples/jsm/helpers/RectAreaLightHelper.js",
+          "RectAreaLightUniformsLib": "https://unpkg.com/three@0.139.0/examples/jsm/lights/RectAreaLightUniformsLib.js"
+        }
+      }
+    </script>
+    <script type="module" src="js/model1.js"></script>
+    <script src="js/btn_active.js"></script>
+    <script src="js/menu_return.js"></script>
+    <script src="js/offmous.js"></script>
+  </body>
+</html>

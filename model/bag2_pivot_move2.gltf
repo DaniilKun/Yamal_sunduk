@@ -1,0 +1,201 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.7.33",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                1
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "1_LOW.002",
+            "scale" : [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0010000000474974513
+            ],
+            "translation" : [
+                0.10209935158491135,
+                -2.5555477142333984,
+                0
+            ]
+        },
+        {
+            "children" : [
+                0
+            ],
+            "name" : "Node_1",
+            "scale" : [
+                0.15173429250717163,
+                0.15173429250717163,
+                0.15173429250717163
+            ],
+            "translation" : [
+                -0.012860452756285667,
+                0.38889390230178833,
+                0
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "name" : "bag2_mat",
+            "normalTexture" : {
+                "index" : 0,
+                "scale" : -1
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.800000011920929,
+                    0.800000011920929,
+                    0.800000011920929,
+                    1
+                ],
+                "baseColorTexture" : {
+                    "index" : 1
+                },
+                "metallicFactor" : 0,
+                "metallicRoughnessTexture" : {
+                    "index" : 2
+                },
+                "roughnessFactor" : 0.5678070187568665
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "1_LOW.002",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2,
+                        "TEXCOORD_1" : 3
+                    },
+                    "indices" : 4,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        },
+        {
+            "sampler" : 0,
+            "source" : 1
+        },
+        {
+            "sampler" : 0,
+            "source" : 2
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "BAG2_Normal",
+            "uri" : "BAG2_Normal.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "bag2_matbasecolortexture",
+            "uri" : "bag2_matbasecolortexture.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "bag2_matmetallicroughnesstex",
+            "uri" : "bag2_matmetallicroughnesstex.png"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 8446,
+            "max" : [
+                1291.237548828125,
+                1386.8974609375,
+                558.8057861328125
+            ],
+            "min" : [
+                -1269.664306640625,
+                -1133.832763671875,
+                -570.1648559570312
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 8446,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 8446,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5126,
+            "count" : 8446,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5123,
+            "count" : 47952,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 101352,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 101352,
+            "byteOffset" : 101352
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 67568,
+            "byteOffset" : 202704
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 67568,
+            "byteOffset" : 270272
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 95904,
+            "byteOffset" : 337840
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9987
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 433744,
+            "uri" : "bag2_pivot_move2.bin"
+        }
+    ]
+}

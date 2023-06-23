@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 3840px;
+    height: 2150px;
+}
+h1 {
+    font-family: 'CeraPro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 95px;
+    line-height: 110px;
+    text-align: center;
+    color: #FFFFFF;
+    border: 1px solid #000000;
+}
+h2 {
+    font-family: 'CeraPro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 88.2%;
+    text-align: center;
+    letter-spacing: -0.06em;
+    color: #FFFFFF;
+}
+h3 {
+    font-family: 'CeraPro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 90.2%;
+    letter-spacing: -0.055em;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);   
+}
+.active {
+    box-shadow: 0px 0px 30px 20px rgba(255, 250, 204, 0.75);
+  }

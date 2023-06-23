@@ -1,0 +1,186 @@
+body {
+  background-image: url(img/choosing_a_bag.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.active:hover {
+  box-shadow: 0px 0px 30px 20px rgba(255, 250, 204, 0.75);
+  transition: all 3ms ease;
+}
+.container {
+  position: relative;
+  top: 200px;
+}
+
+.title {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  font-family: 'CeraPro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 95px;
+  line-height: 110px;
+  text-align: center;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.container_bag {
+  position: relative;
+    top: 305px;
+    left: 50.5%;
+    transform: translate(-50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 82%;
+}
+
+.cont {
+  position: relative;
+  width: 1134px;
+  height: 558px;
+  margin-bottom: 185px;
+
+}
+.imgFon {
+  height: 395px;
+  width: 1134px;
+}
+.bag1{
+  width: 700px;
+    height: 690px;
+  position: absolute;
+  top: -150px;
+  left: 890px;
+  background-image: url(./img/PadBag.png);
+  /* background-color: aqua; */
+  background-repeat: no-repeat;
+}
+.bag1Bef{
+  background-image: url(./img/PadBagBef.png);
+}
+.bag2{
+  width: 700px;
+    height: 675px;
+  position: absolute;
+  top: -150px;
+  left: -400px;
+  background-image: url(./img/Padko.png);
+  /* background-color: aqua; */
+  background-repeat: no-repeat;
+}
+.bag2Bef{
+  background-image: url(./img/PadkoBef.png);
+}
+.bag3{
+  width: 700px;
+    height: 770px;
+  position: absolute;
+  top: -150px;
+  left: 970px;
+  background-image: url(./img/PadBag3.png);
+  /* background-color: aqua; */
+  background-repeat: no-repeat;
+}
+.bag3Bef{
+  background-image: url(./img/PadBag3Bef.png);
+  top: -200px;
+}
+.bag4{
+  width: 700px;
+    height: 614px;
+  position: absolute;
+  top: -130px;
+  left: -320px;
+  background-image: url(./img/Tuc4.png);
+  /* background-color: aqua; */
+  background-repeat: no-repeat;
+}
+.bag4Bef{
+  background-image: url(./img/Tuc4Bef.png);
+  height: 778px;
+  top: -220px;
+  left: -395px;
+}
+
+.container_bag h1 {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translate(-50%);
+  white-space: nowrap;
+  font-family: 'CeraPro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 70px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+}
+
+.container_bag button {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translate(-50%);
+  background-image: url(img/btn.png);
+  width: 647px;
+  height: 106px;
+}
+
+.container_bag button h1 {
+  top: 0;
+  font-family: 'CeraPro';
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 90px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.container_canvas {
+  position: absolute;
+  top: 0;
+  width: 1000px;
+  height: 500px;
+  background-color: antiquewhite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.exit {
+  position: relative;
+  text-align: center;
+  top: 220px;
+}
+
+.exit button {
+  background-image: url(img/btn.png);
+  background-repeat: calc(no-repeat);
+  width: 653px;
+  height: 110px;
+  border-radius: 25px;
+}
+
+.exit button h1 {
+  font-family: 'CeraPro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.025em;
+  color: #FFFFFF;
+}
