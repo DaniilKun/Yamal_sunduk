@@ -10,15 +10,15 @@ function init() {
     const scene = new THREE.Scene()
     const size = {
         width: 2500,
-        height: 1500,
+        height: 2500,
     };
 
-    const camera = new THREE.PerspectiveCamera(40, size.width / size.height, 13, 2000);
-    camera.position.z = 60;
-    camera.position.x = 0;
-    camera.position.y = 20;
+    const camera = new THREE.PerspectiveCamera(5, size.width / size.height, 13, 9000);
+    camera.position.z = 0;
+    camera.position.x = 5660;
+    camera.position.y = 2220;
 
-    var directionalLight = new THREE.DirectionalLight('0xffffff', 3)
+    var directionalLight = new THREE.DirectionalLight('0xffffff', 2)
     directionalLight.position.set(0, 1, 0)
     directionalLight.castShadow = true
     scene.add(directionalLight)
@@ -54,7 +54,7 @@ function init() {
   
     {
         const loader = new GLTFLoader();
-        loader.load('./model/bag_scene.gltf', gltf => {
+        loader.load('./model/m1/scene (1).gltf', gltf => {
             scene.add(gltf.scene);
         },
             function (error) {
@@ -67,9 +67,9 @@ function init() {
     const controls = new OrbitControls(camera, renderer.domElement);
     controls.autoRotate = true;
     controls.autoRotateSpeed = 2;
-    controls.enableDamping = true;
-    controls.minDistance = 29;
-    controls.maxDistance = 50;
+    controls.enableDamping = false;
+    controls.minDistance = 13;
+    controls.maxDistance = 1;
 
     window.addEventListener('resize', onWindowResize, false)
 

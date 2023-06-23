@@ -1,0 +1,302 @@
+{
+    "asset": {
+        "version": "2.0",
+        "generator": "THREE.GLTFExporter"
+    },
+    "scenes": [
+        {
+            "name": "Scene",
+            "nodes": [
+                1
+            ]
+        }
+    ],
+    "scene": 0,
+    "nodes": [
+        {
+            "matrix": [
+                0.009999999776482582,
+                0,
+                0,
+                0,
+                0,
+                -1.3435885348189617e-9,
+                0.009999999434197101,
+                0,
+                0,
+                -0.009999999434197101,
+                -1.3435885348189617e-9,
+                0,
+                0,
+                -0.1446530188567775,
+                -0.018628618159748755,
+                1
+            ],
+            "name": "Плоскость001",
+            "extras": {
+                "name": "Плоскость.001"
+            },
+            "mesh": 0
+        },
+        {
+            "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0.02730637849023307,
+                -0.038113795213039425,
+                0,
+                1
+            ],
+            "name": "bag3_bl.gltf",
+            "children": [
+                0
+            ]
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteOffset": 0,
+            "byteLength": 103608,
+            "target": 34962,
+            "byteStride": 12
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 103608,
+            "byteLength": 103608,
+            "target": 34962,
+            "byteStride": 12
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 207216,
+            "byteLength": 69072,
+            "target": 34962,
+            "byteStride": 8
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 276288,
+            "byteLength": 69072,
+            "target": 34962,
+            "byteStride": 8
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 345360,
+            "byteLength": 93624,
+            "target": 34963
+        },
+        {
+            "buffer": 1,
+            "byteLength": 4908512
+        },
+        {
+            "buffer": 2,
+            "byteLength": 10856764
+        },
+        {
+            "buffer": 3,
+            "byteLength": 9814788
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 438984,
+            "uri": "scene (1).bin"
+        },
+        {
+            "uri": "image0.png",
+            "byteLength": 4908512
+        },
+        {
+            "uri": "image2.png",
+            "byteLength": 10856764
+        },
+        {
+            "uri": "image1.png",
+            "byteLength": 9814788
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5126,
+            "count": 8634,
+            "max": [
+                15.186534881591797,
+                12.441451072692871,
+                -0.4332923889160156
+            ],
+            "min": [
+                -21.02830696105957,
+                -7.317743301391602,
+                -37.91496276855469
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 8634,
+            "max": [
+                0.9999989867210388,
+                0.999962568283081,
+                0.999880313873291
+            ],
+            "min": [
+                -0.9999647736549377,
+                -0.9999773502349854,
+                -0.999849259853363
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 8634,
+            "max": [
+                0.998772919178009,
+                0.9987088441848755
+            ],
+            "min": [
+                0.0015474911779165268,
+                0.0021845102310180664
+            ],
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "componentType": 5123,
+            "count": 8634,
+            "max": [
+                65535,
+                65535,
+                65535,
+                65535
+            ],
+            "min": [
+                65535,
+                65535,
+                65535,
+                65535
+            ],
+            "type": "VEC4",
+            "normalized": true
+        },
+        {
+            "bufferView": 4,
+            "componentType": 5123,
+            "count": 46812,
+            "max": [
+                8633
+            ],
+            "min": [
+                0
+            ],
+            "type": "SCALAR"
+        }
+    ],
+    "materials": [
+        {
+            "pbrMetallicRoughness": {
+                "metallicFactor": 1,
+                "roughnessFactor": 1,
+                "metallicRoughnessTexture": {
+                    "index": 0,
+                    "channel": 0
+                },
+                "baseColorTexture": {
+                    "index": 1,
+                    "texCoord": 0
+                }
+            },
+            "normalTexture": {
+                "index": 2,
+                "texCoord": 0
+            },
+            "alphaMode": "BLEND",
+            "doubleSided": true,
+            "name": "bag2_2.002"
+        }
+    ],
+    "textures": [
+        {
+            "sampler": 0,
+            "source": 0,
+            "name": "bag3_Metallic-bag3_Roughness"
+        },
+        {
+            "sampler": 1,
+            "source": 1,
+            "name": "bag3_BaseColor-bag3_Alpha"
+        },
+        {
+            "sampler": 2,
+            "source": 2,
+            "name": "bag3_Normal"
+        }
+    ],
+    "samplers": [
+        {
+            "magFilter": 9729,
+            "minFilter": 9987,
+            "wrapS": 10497,
+            "wrapT": 10497
+        },
+        {
+            "magFilter": 9729,
+            "minFilter": 9987,
+            "wrapS": 10497,
+            "wrapT": 10497
+        },
+        {
+            "magFilter": 9729,
+            "minFilter": 9987,
+            "wrapS": 10497,
+            "wrapT": 10497
+        }
+    ],
+    "images": [
+        {
+            "mimeType": "image/png",
+            "bufferView": 5
+        },
+        {
+            "mimeType": "image/png",
+            "bufferView": 7
+        },
+        {
+            "mimeType": "image/png",
+            "bufferView": 6
+        }
+    ],
+    "meshes": [
+        {
+            "primitives": [
+                {
+                    "mode": 4,
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2,
+                        "COLOR_0": 3
+                    },
+                    "indices": 4,
+                    "material": 0
+                }
+            ]
+        }
+    ]
+}
