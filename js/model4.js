@@ -10,10 +10,10 @@ function init() {
     const scene = new THREE.Scene()
     const size = {
         width: 2500,
-        height: 1500,
+        height: 1725,
     };
 
-    const camera = new THREE.PerspectiveCamera(40, size.width / size.height, 13, 2000);
+    const camera = new THREE.PerspectiveCamera(35, size.width / size.height, 13, 2000);
     camera.position.z = 60;
     camera.position.x = 0;
     camera.position.y = 20;
@@ -54,7 +54,7 @@ function init() {
   
     {
         const loader = new GLTFLoader();
-        loader.load('./model/m4/scene2.gltf', gltf => {
+        loader.load('../model/m4/bag3.glb', gltf => {
             scene.add(gltf.scene);
         },
             function (error) {

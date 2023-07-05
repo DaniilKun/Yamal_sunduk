@@ -2,7 +2,6 @@ import * as THREE from 'three';
 import { OrbitControls } from 'OrbitControls';
 import { GLTFLoader } from 'GLTFLoader';
 
-
 function init() {
     let container = document.querySelector('.container');
 
@@ -10,38 +9,30 @@ function init() {
     const scene = new THREE.Scene()
     const size = {
         width: 2500,
-        height: 1500,
+        height: 1750,
     };
+
+
+    let directionalLight;
+
+    // light
+    directionalLight = new THREE.DirectionalLight( 0xffffff, 3.0 );
+    directionalLight.position.set( 300, 100, 3000 );
+    directionalLightIntensity: 15.6
+    scene.add( directionalLight );
+
+    directionalLight = new THREE.DirectionalLight( 0xffffff, 3.0 );
+    directionalLight.position.set( -300, -100, -3000 );
+    directionalLight.castShadow = true
+    directionalLightIntensity: 15.6
+    scene.add( directionalLight );
+
 
     const camera = new THREE.PerspectiveCamera(40, size.width / size.height, 13, 2000);
     camera.position.z = 60;
     camera.position.x = 0;
     camera.position.y = 20;
 
-    var directionalLight = new THREE.DirectionalLight('0xffffff', 3)
-    directionalLight.position.set(0, 1, 0)
-    directionalLight.castShadow = true
-    scene.add(directionalLight)
-
-    var light3 = new THREE.DirectionalLight(0xc4c4c4, 1)
-    light3.position.set(0, 300, 500)
-    scene.add(light3)
-
-    var light5 = new THREE.DirectionalLight(0xc4c4c4, 1)
-    light5.position.set(0, 100, -500)
-    scene.add(light5)
-
-    var light6 = new THREE.DirectionalLight(0xc4c4c4, 1)
-    light6.position.set(-400, 300, 0)
-    scene.add(light6)
-
-    var light7 = new THREE.DirectionalLight(0xc4c4c4, 1)
-    light7.position.set(0, -700, 0)
-    scene.add(light7)
-
-    var light8 = new THREE.PointLight(0xc4c4c4, 1)
-    light8.position.set(0, 1400, 0)
-    scene.add(light8)
 
 
     const renderer = new THREE.WebGLRenderer({ alpha: true })
@@ -54,7 +45,7 @@ function init() {
   
     {
         const loader = new GLTFLoader();
-        loader.load('./model/m3/bag_scene.gltf', gltf => {
+        loader.load('../model/m3/bag_scene.gltf', gltf => {
             scene.add(gltf.scene);
         },
             function (error) {

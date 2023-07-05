@@ -9,52 +9,40 @@ function init() {
     //Scene
     const scene = new THREE.Scene()
     const size = {
-        width: 2500,
-        height: 2500,
+        width: 2400,
+        height: 1725,
     };
 
     const camera = new THREE.PerspectiveCamera(5, size.width / size.height, 13, 9000);
-    camera.position.z = 0;
-    camera.position.x = 5660;
-    camera.position.y = 2220;
+    camera.position.z = 250;
+    camera.position.x = 250;
+    camera.position.y = 15;
 
-    var directionalLight = new THREE.DirectionalLight('0xffffff', 2)
-    directionalLight.position.set(0, 1, 0)
+
+    let directionalLight;
+
+    // light
+    directionalLight = new THREE.DirectionalLight( 0xffffff, 3.0 );
+    directionalLight.position.set( 300, 100, 300 );
+    directionalLightIntensity: 15.6
+    scene.add( directionalLight );
+
+    directionalLight = new THREE.DirectionalLight( 0xffffff, 3.0 );
+    directionalLight.position.set( -500, -100, -300);
     directionalLight.castShadow = true
-    scene.add(directionalLight)
-
-    var light3 = new THREE.PointLight(0xc4c4c4, 1)
-    light3.position.set(0, 300, 500)
-    scene.add(light3)
-
-    var light5 = new THREE.PointLight(0xc4c4c4, 1)
-    light5.position.set(0, 100, -500)
-    scene.add(light5)
-
-    var light6 = new THREE.PointLight(0xc4c4c4, 1)
-    light6.position.set(-400, 300, 0)
-    scene.add(light6)
-
-    var light7 = new THREE.PointLight(0xc4c4c4, 1)
-    light7.position.set(0, -700, 0)
-    scene.add(light7)
-
-    var light8 = new THREE.PointLight(0xc4c4c4, 1)
-    light8.position.set(0, 1400, 0)
-    scene.add(light8)
+    directionalLightIntensity: 15.6
+    scene.add( directionalLight );
 
 
     const renderer = new THREE.WebGLRenderer({ alpha: true })
     renderer.setSize(size.width, size.height)
     container.appendChild(renderer.domElement)
-
- 
     renderer.setClearColor(0x000000, 0);
+    renderer.toneMapping = THREE.NoToneMapping;
 
-  
     {
         const loader = new GLTFLoader();
-        loader.load('./model/m1/scene (1).gltf', gltf => {
+        loader.load('../model/m1/bag2.glb', gltf => {
             scene.add(gltf.scene);
         },
             function (error) {
@@ -67,9 +55,10 @@ function init() {
     const controls = new OrbitControls(camera, renderer.domElement);
     controls.autoRotate = true;
     controls.autoRotateSpeed = 2;
-    controls.enableDamping = false;
-    controls.minDistance = 13;
-    controls.maxDistance = 1;
+    controls.enableDamping = true;
+    controls.minDistance = 103;
+    controls.maxDistance = 550;
+    controls.enablePan = false;
 
     window.addEventListener('resize', onWindowResize, false)
 

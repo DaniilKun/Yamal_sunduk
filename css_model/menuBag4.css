@@ -1,5 +1,5 @@
 body {
-  background-image: url(../img/choosing_a_bag.png);
+  background-image: url(../img/choosing_a_bag.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -196,6 +196,27 @@ font-weight: 700;
 line-height: 105.2%;
 letter-spacing: 0.525px;
     padding-top: 33px;
+}
+.img8 {
+  margin-top: 20px;
+  margin-left: 250px;
+}
+.fonTxt8 {
+  background-image: url(../img/imgBag/fonTxt.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 501px;
+  height: 138px;
+  margin-top: 40px;
+    margin-left: 100px;
+    color: #FFF;
+text-align: center;
+font-size: 35px;
+font-family: "CeraPro";
+font-weight: 700;
+line-height: 105.2%;
+letter-spacing: 0.525px;
+    padding-top: 55px;
 }
 
 .exit {
